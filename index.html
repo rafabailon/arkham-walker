@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101412">
+  <meta name="description" content="Arkham Walker: strange fiction and cosmic horror reviews in English and Spanish.">
+  <title>Arkham Walker — Choose your language</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <style>
+    .language-home { min-height: 100vh; display: grid; place-items: center; padding: 32px 0; }
+    .language-home-inner { width: min(720px, calc(100% - 36px)); }
+    .language-home .brand { margin-bottom: 48px; }
+    .language-home h1 { max-width: 650px; margin: 0; font: 400 clamp(45px, 8vw, 76px)/.98 var(--display); }
+    .language-home h1 em { color: var(--moss); }
+    .language-home p:not(.eyebrow) { color: var(--muted); }
+    .language-choices { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 32px; }
+    .language-choice { padding: 22px; border: 1px solid var(--line); background: #171d19; transition: border-color .2s, transform .2s; }
+    .language-choice:hover { transform: translateY(-3px); border-color: var(--sepia); }
+    .language-choice strong { display: block; color: var(--paper); font: 500 28px var(--display); }
+    .language-choice span { color: var(--sepia); font-size: 11px; }
+    @media (max-width: 520px) { .language-choices { grid-template-columns: 1fr; } .language-home .brand { margin-bottom: 33px; } }
+  </style>
+</head>
+<body data-page="language">
+  <main class="language-home">
+    <div class="language-home-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">◉</span><span>Arkham <b>Walker</b></span></a>
+      <p class="eyebrow eyebrow-moss">One journal, two languages</p>
+      <h1>Walk the line between <em>wonder and dread.</em></h1>
+      <p>Choose a language to explore the archive, field notes, and reviews.</p>
+      <nav class="language-choices" aria-label="Choose a language">
+        <a class="language-choice" href="es/index.html" lang="es"><strong>Español</strong><span>Entrar al archivo →</span></a>
+        <a class="language-choice" href="en/index.html" lang="en"><strong>English</strong><span>Enter the archive →</span></a>
+      </nav>
+    </div>
+  </main>
+</body>
+</html>
