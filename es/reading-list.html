@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101412">
+  <meta name="description" content="Tus reseñas guardadas de Arkham Walker, reunidas para la próxima noche oscura.">
+  <title>Lista de lectura — Arkham Walker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <script defer src="../assets/js/books.es.js"></script>
+  <script defer src="../assets/js/site.js"></script>
+</head>
+<body data-page="reading-list">
+  <header class="site-header"><div class="nav-wrap page-width">
+    <a class="brand" href="index.html" aria-label="Inicio de Arkham Walker"><span class="brand-mark" aria-hidden="true">◉</span><span>Arkham <b>Walker</b></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir navegación"><span></span><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Navegación principal"><a href="reviews.html" data-nav="reviews">El archivo</a><a href="field-notes.html" data-nav="field-notes">Notas de campo</a><a href="reading-list.html" data-nav="reading-list">Lista de lectura <span class="nav-count" data-reading-count hidden>0</span></a><a href="about.html" data-nav="about">Acerca de</a><a class="nav-cta" href="index.html#dispatch">Cartas <span aria-hidden="true">↗</span></a></nav>
+  </div></header>
+  <main>
+    <section class="page-hero page-hero-list"><div class="page-width page-hero-inner">
+      <p class="eyebrow">Marcadas para una noche futura</p><h1>Tu lista de <em>lectura</em></h1>
+      <p>Las rutas guardadas permanecen en este navegador, listas para la próxima noche oscura.</p>
+      <div class="breadcrumb"><a href="index.html">Inicio</a><span>/</span><span aria-current="page">Lista de lectura</span></div>
+    </div></section>
+    <section class="section page-width" aria-labelledby="reading-list-heading">
+      <div class="section-heading"><div><p class="eyebrow eyebrow-moss">Registro privado</p><h2 id="reading-list-heading">Rutas <em>guardadas</em></h2></div><div class="list-actions"><a class="text-link" href="reviews.html">Explorar el archivo <span aria-hidden="true">→</span></a><button class="button list-clear" id="clear-reading-list" type="button" hidden>Vaciar lista</button></div></div>
+      <p class="library-count" id="reading-list-count" aria-live="polite"></p>
+      <div class="book-grid" id="reading-list" aria-live="polite"></div>
+      <p class="empty-state" id="reading-list-empty" hidden>Aún no hay rutas guardadas. Marca una reseña y te esperará aquí. <a class="text-link" href="reviews.html">Explorar el archivo <span aria-hidden="true">→</span></a></p>
+      <noscript><p class="empty-state">La lista de lectura necesita JavaScript. Aun así puedes recorrer todas las reseñas del archivo.</p></noscript>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner page-width"><a class="brand brand-small" href="index.html">Arkham <b>Walker</b></a><p>Notas independientes desde el borde del mapa.</p><a href="reviews.html" class="footer-link">Todas las entradas del archivo ↗</a></div></footer>
+</body>
+</html>
