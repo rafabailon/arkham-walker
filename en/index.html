@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101412">
+  <meta name="description" content="Arkham Walker explores strange books, haunted coastlines, and the literature of cosmic dread.">
+  <title>Arkham Walker — Walk the uncanny line</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <script defer src="../assets/js/books.en.js"></script>
+  <script defer src="../assets/js/site.js"></script>
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="nav-wrap page-width">
+      <a class="brand" href="index.html" aria-label="Arkham Walker home"><span class="brand-mark" aria-hidden="true">◉</span><span>Arkham <b>Walker</b></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="reviews.html" data-nav="reviews">The archive</a>
+        <a href="field-notes.html" data-nav="field-notes">Field notes</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="reading-list.html" data-nav="reading-list">Reading list <span class="nav-count" data-reading-count hidden>0</span></a><a class="nav-cta" href="index.html#dispatch">Dispatches <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-content page-width">
+        <p class="eyebrow"><span class="eyebrow-mark">✳</span> A field journal of the uncanny</p>
+        <h1>Walk the line<br>between <em>wonder</em><br>and dread.</h1>
+        <p class="hero-copy">A reader’s guide to strange fiction, forgotten places, and the books that follow you home.</p>
+        <div class="hero-actions">
+          <a class="button button-moss" href="reviews.html">Explore the archive <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="field-notes.html">Choose a field path <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-stamp" aria-label="Independent reviews since 2024"><span>INDEPENDENT<br>FIELD NOTES</span><b>AW</b><span>EST. MMXXIV</span></div>
+        <div class="hero-caption"><span class="caption-line"></span><span>Some roads are best taken in daylight.</span></div>
+      </div>
+    </section>
+
+    <section class="section page-width" aria-labelledby="featured-title">
+      <div class="section-heading">
+        <div><p class="eyebrow eyebrow-moss">From the reading room</p><h2 id="featured-title">Recent <em>encounters</em></h2></div>
+        <a class="text-link" href="reviews.html">All reviews <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="book-grid" id="featured-reviews" aria-live="polite"></div>
+      <noscript><p class="empty-state">The featured reviews need JavaScript. You can still open the archive.</p></noscript>
+    </section>
+
+    <section class="dispatch-section" id="dispatch">
+      <div class="dispatch-inner page-width">
+        <div>
+          <p class="eyebrow">Letters from the threshold</p>
+          <h2>Keep one eye<br>on the <em>horizon.</em></h2>
+          <p class="dispatch-copy">Occasional notes on unsettling reads, curious folklore, and places best left unnamed.</p>
+        </div>
+        <div class="dispatch-form-wrap">
+          <form class="dispatch-form" data-newsletter>
+            <label for="dispatch-email">Your email address</label>
+            <div class="input-row"><input id="dispatch-email" type="email" placeholder="reader@example.com" autocomplete="email" required><button class="button button-gold" type="submit">Sign me up <span aria-hidden="true">→</span></button></div>
+          </form>
+          <p class="form-note" role="status">A quiet dispatch, now and then. This demo does not store your address.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner page-width"><a class="brand brand-small" href="index.html">Arkham <b>Walker</b></a><p>Independent notes from the edge of the map.</p><a href="about.html" class="footer-link">Read our field charter ↗</a></div></footer>
+</body>
+</html>

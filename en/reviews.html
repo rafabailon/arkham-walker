@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101412">
+  <meta name="description" content="Search the Arkham Walker archive of cosmic horror and uncanny fiction reviews.">
+  <title>The Archive — Arkham Walker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <script defer src="../assets/js/books.en.js"></script>
+  <script defer src="../assets/js/site.js"></script>
+</head>
+<body data-page="reviews">
+  <header class="site-header"><div class="nav-wrap page-width">
+    <a class="brand" href="index.html" aria-label="Arkham Walker home"><span class="brand-mark" aria-hidden="true">◉</span><span>Arkham <b>Walker</b></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="reviews.html" data-nav="reviews">The archive</a><a href="field-notes.html" data-nav="field-notes">Field notes</a><a href="about.html" data-nav="about">About</a><a href="reading-list.html" data-nav="reading-list">Reading list <span class="nav-count" data-reading-count hidden>0</span></a><a class="nav-cta" href="index.html#dispatch">Dispatches <span aria-hidden="true">↗</span></a></nav>
+  </div></header>
+  <main>
+    <section class="page-hero page-hero-archive"><div class="page-width page-hero-inner">
+      <p class="eyebrow">Catalogue of strange impressions</p><h1>The <em>archive</em></h1>
+      <p>Every book leaves a mark. Find the one that has been waiting for you.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">The archive</span></div>
+    </div></section>
+    <section class="section page-width" aria-labelledby="browse-heading">
+      <div class="section-heading"><div><p class="eyebrow eyebrow-moss">Open the ledger</p><h2 id="browse-heading">Browse the <em>unusual</em></h2></div><p class="section-aside">A score is a reading companion, never a diagnosis.</p></div>
+      <div class="filter-panel">
+        <label class="filter-field search-field"><span>Search title, author, or subject</span><input id="review-search" type="search" placeholder="Try “sea” or “Miskatonic”" autocomplete="off"></label>
+        <label class="filter-field"><span>Choose a territory</span><select id="genre-filter"><option value="">All territories</option></select></label>
+        <label class="filter-field"><span>Arrange by</span><select id="review-sort"><option value="featured">Filed recently</option><option value="score">Highest sanity</option><option value="title">Title A–Z</option></select></label>
+      </div>
+      <p class="library-count" id="library-count" aria-live="polite"></p>
+      <div class="book-grid" id="all-reviews" aria-live="polite"></div>
+      <p class="empty-state" id="library-empty" hidden>No entries found. Adjust your search and try another trail.</p>
+      <noscript><p class="empty-state">The archive needs JavaScript to search and filter. Every review is also listed in the reading room.</p></noscript>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner page-width"><a class="brand brand-small" href="index.html">Arkham <b>Walker</b></a><p>Independent notes from the edge of the map.</p><a href="field-notes.html" class="footer-link">Choose a field path ↗</a></div></footer>
+</body>
+</html>
